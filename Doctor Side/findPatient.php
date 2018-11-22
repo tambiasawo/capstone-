@@ -1,3 +1,4 @@
+//this file enables a doctor to locate his patient's personal&medical info by searching the patient DB ($pat_db) for their name
 <?php
 error_reporting(E_ALL ^ E_WARNING);
 session_start();
