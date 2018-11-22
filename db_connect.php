@@ -1,3 +1,4 @@
+// this file is used to connect to both the patient and doctor's db.
 <?php
 
 $doc_db = mysql_connect("localhost","wellbldw_TA","tc2b8iym",true) or die(mysql_error());
