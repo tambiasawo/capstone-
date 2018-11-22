@@ -1,3 +1,50 @@
+<?php
+include_once 'dbconnect.php';
+error_reporting(E_ALL ^ E_WARNING);
+session_start();
+ 
+if(isset($_SESSION['user'])!="")
+{
+    header("Location: all.php");
+}
+
+$res=mysql_query("SELECT * FROM `usersdoc` WHERE id=".$_SESSION['user'], $doc_db);
+$userRow=mysql_fetch_array($res);
+$docName = $userRow['name'];
+
+if(@$_POST['view']) {
+$res1= mysql_query("SELECT `name`,`healthno` FROM `users` WHERE `DoctorsName` LIKE '%$docName%'", $pat_db);
+
+while ($userRow1=mysql_fetch_array($res1))
+{
+$count=mysql_num_rows($res1);
+?>
+<ul>
+
+		    <?php echo '<div id = "content">'?> <a href= "patientinfob.php?name=<?php echo $userRow1['name'];?>"><?php echo $userRow1['name'];?></a></div><br>
+
+ 
+<?php
+	
+	}
+ 
+?>
+ 
+
+
+
+</ul>
+</br></br>
+<strong><font size ="4"> You have a total of <?php echo $count ?> patients. </strong></font>
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<?php
+	
+	} 
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -60,50 +107,3 @@
 
 
 
-<?php
-include_once 'dbconnect.php';
-error_reporting(E_ALL ^ E_WARNING);
-session_start();
- 
-if(isset($_SESSION['user'])!="")
-{
-    header("Location: all.php");
-}
-
-$res=mysql_query("SELECT * FROM `usersdoc` WHERE id=".$_SESSION['user'], $doc_db);
-$userRow=mysql_fetch_array($res);
-$docName = $userRow['name'];
-
-if(@$_POST['view']) {
-$res1= mysql_query("SELECT `name`,`healthno` FROM `users` WHERE `DoctorsName` LIKE '%$docName%'", $pat_db);
-
-while ($userRow1=mysql_fetch_array($res1))
-{
-$count=mysql_num_rows($res1);
-?>
-<ul>
-
-		    <?php echo '<div id = "content">'?> <a href= "patientinfob.php?name=<?php echo $userRow1['name'];?>"><?php echo $userRow1['name'];?></a></div><br>
-
- 
-<?php
-	
-	}
- 
-?>
- 
-
-
-
-</ul>
-</br></br>
-<strong><font size ="4"> You have a total of <?php echo $count ?> patients. </strong></font>
-<br>
-<br>
-<br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<?php
-	
-	}
- 
-?>
