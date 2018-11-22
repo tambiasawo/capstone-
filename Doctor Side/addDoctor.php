@@ -1,3 +1,5 @@
+// this file allows a patient to add a doctor to his list of doctors by entering in their name.
+
 <?php
 error_reporting(E_ALL ^ E_WARNING);
 session_start();
