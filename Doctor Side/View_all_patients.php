@@ -1,3 +1,4 @@
+// this file enables a doctor to see all his patients at once. It searches the doctors db ($doc_db) for patients attached to his name in his row in the db
 <?php
 include_once 'dbconnect.php';
 error_reporting(E_ALL ^ E_WARNING);
@@ -23,16 +24,9 @@ $count=mysql_num_rows($res1);
 
 		    <?php echo '<div id = "content">'?> <a href= "patientinfob.php?name=<?php echo $userRow1['name'];?>"><?php echo $userRow1['name'];?></a></div><br>
 
- 
 <?php
-	
 	}
- 
 ?>
- 
-
-
-
 </ul>
 </br></br>
 <strong><font size ="4"> You have a total of <?php echo $count ?> patients. </strong></font>
