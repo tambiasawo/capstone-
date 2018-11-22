@@ -1,3 +1,4 @@
+// this file displays a doctor's personal profile upon registration
 <?php
 error_reporting(E_ALL ^ E_WARNING);
 session_start();
