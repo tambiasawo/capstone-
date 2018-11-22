@@ -8,7 +8,7 @@ The website is used by a patient to upload his medical information into the data
 This is the homepage of the site. It contains both the sign up and log in forms.
 - index.php:
 This is the php file working behind the forms in index.html
-db_connect.php:
+- db_connect.php:
 This file connects both the patient's and doctor's db
 
 Doctor Side
