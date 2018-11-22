@@ -1,3 +1,5 @@
+//this file enables a doctor to search for a patient by entering the date the patient last updated his/her medical data
+
 if(isset($_POST['searchD'])){
 	$searchq = $_POST['searchD'];
 	if ($searchq !=''){
