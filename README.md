@@ -4,9 +4,9 @@ This is a website I designed from scratch for my final year project in school. I
 
 The website is used by a patient to upload his medical information into the database ($pat_db) and also by a doctor in order to see the uploaded patient's medical  information. The site is divided into two different categories for easy manourvering by the user.
 
-Index.html:
+- Index.html:
 This is the homepage of the site. It contains both the sign up and log in forms.
-index.php:
+- index.php:
 This is the php file working behind the forms in index.html
 db_connect.php:
 This file connects both the patient's and doctor's db
@@ -16,11 +16,11 @@ Doctor Side
 this file enables a doctor to see all his patients at once. It searches the doctors db ($doc_db) for patients attached to his name in his row in the db.
 - DateSearch.php
 enables a doctor to search for a patient by entering the date the patient last updated his/her medical data. The file searches the doctor's row in the db for that date entry
--findpatient.php
+- findpatient.php
 enables a doctor to locate his patient's personal&medical info by searching the doctor's DB ($doc_db) for the name entered. Returns the name if found or 'not found' if not found or 'You cannot view this patient's profile because you are not the assigned health practitioner.' if the name is found but has no relationship with the doctor.
--patientinfo.php
+- patientinfo.php
 enables the doctor to view his patients medical & personal info.
--personalinfo_doc.php
+- personalinfo_doc.php
 this file displays a doctor's personal profile upon registration
 
 
