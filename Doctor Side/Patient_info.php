@@ -1,3 +1,5 @@
+// this file lets a patient view their profile after registration 
+
 <!DOCTYPE html><html><head><title>Wellnode2</title><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><meta name="viewport" content="width=800" /><meta name="description" content="" /><meta name="generator" content="EverWeb 1.9.5 (1495)" /><meta name="buildDate" content="Thursday, March 3, 2016" /><link rel="canonical" href="style.css" />
 <meta property="og:url" content="http://" /><meta property="og:title" content="Wellnode2!"/><meta property="og:type" content="website" /> <link rel="stylesheet" type="text/css" href="style.css" /><script type="text/javascript" src="ew_js/imageCode.js"></script><style type="text/css">
 scroll down to the end
@@ -96,9 +98,7 @@ error_reporting(E_ERROR | E_PARSE);
 <br>
 <br>
 <br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <div id="footer">
-HEART CONDITION MONITORING SYSTEM  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="doc_home.php">Back to Profile Page</a>
+HEART CONDITION MONITORING SYSTEM  <a href="doc_home.php">Back to Profile Page</a>
 </div>
