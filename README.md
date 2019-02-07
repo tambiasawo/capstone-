@@ -1,8 +1,8 @@
 # capstone-
 
-This is a website I designed from scratch for my final year project in school. I did all the backend programming, while someone else did the front end coding. 
+This is the code of a website I designed from scratch for my final year project in school. I did all the backend programming and some frontend.
 
-The website is used by a patient to upload his medical information into the database ($pat_db) and also by a doctor in order to see the uploaded patient's medical  information. The site is divided into two different categories for easy manourvering by the user. The flow chart shows a breakdown of the website as used by the user. The Word docx contains images of the forms and databases when I first created them. Now the domain no longer exists.
+This website was used by a patient to upload his medical information into the database ($pat_db) and also by a doctor in order to see the uploaded patient's medical  information. The site is divided into two different categories for easy manourvering by the user. The flow chart shows a breakdown of the website as used by the user. The Word docx contains images of the forms and databases when I first created them. Now the domain no longer exists.
 
 - Index.html:
 This is the homepage of the site. It contains both the sign up and log in forms.
